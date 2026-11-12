@@ -1,8 +1,3 @@
-/* =========================================================
-   VICTORIAN DEBUT INVITATION
-   COMPLETE RESPONSIVE CSS
-========================================================= */
-
 * {
     box-sizing: border-box;
 }
@@ -34,9 +29,9 @@ button {
     font: inherit;
 }
 
-/* =========================================================
+/* =====================================================
    BACKGROUND
-========================================================= */
+===================================================== */
 
 .ambient {
     position: fixed;
@@ -57,10 +52,6 @@ button {
         );
 }
 
-/* =========================================================
-   FALLING PETALS
-========================================================= */
-
 .petal-layer {
     position: fixed;
     inset: 0;
@@ -78,19 +69,9 @@ button {
     font-size: 15px;
 }
 
-@keyframes fall {
-    to {
-        transform:
-            translate3d(var(--drift), 110vh, 0)
-            rotate(540deg);
-
-        opacity: 0;
-    }
-}
-
-/* =========================================================
-   COVER / OPENING PAGE
-========================================================= */
+/* =====================================================
+   COVER
+===================================================== */
 
 .cover {
     position: fixed;
@@ -146,16 +127,15 @@ button {
     outline-offset: 9px;
 
     box-shadow: 0 22px 65px #7c5d3820;
+
+    overflow: hidden;
 }
 
 .cover-frame::before,
 .cover-frame::after {
     content: "✧";
-
     position: absolute;
-
     color: var(--gold);
-
     font-size: 30px;
 }
 
@@ -169,9 +149,9 @@ button {
     right: 22px;
 }
 
-/* =========================================================
-   GENERAL SMALL TEXT
-========================================================= */
+/* =====================================================
+   SMALL TEXT
+===================================================== */
 
 .eyebrow,
 .cover-small,
@@ -185,9 +165,9 @@ footer p {
     color: var(--gold);
 }
 
-/* =========================================================
+/* =====================================================
    WAX SEAL
-========================================================= */
+===================================================== */
 
 .wax-seal {
     width: 58px;
@@ -214,15 +194,13 @@ footer p {
     box-shadow: 0 5px 14px #70502735;
 }
 
-/* =========================================================
+/* =====================================================
    COVER TITLE
-========================================================= */
+===================================================== */
 
 .cover h1 {
     font-size: clamp(48px, 9vw, 76px);
-
     font-weight: 500;
-
     line-height: 0.85;
 
     margin: 14px 0;
@@ -232,17 +210,14 @@ footer p {
 
 .cover h1 span {
     font-family: "Great Vibes", cursive;
-
     color: var(--gold);
-
     font-size: 1.1em;
-
     font-weight: 400;
 }
 
-/* =========================================================
-   COVER CELEBRANT NAME
-========================================================= */
+/* =====================================================
+   COVER NAME
+===================================================== */
 
 .cover-name {
     font-family: "Cormorant Garamond", Georgia, serif;
@@ -268,9 +243,9 @@ footer p {
     overflow-wrap: break-word;
 }
 
-/* =========================================================
-   OPEN INVITATION BUTTON
-========================================================= */
+/* =====================================================
+   OPEN BUTTON
+===================================================== */
 
 .open-invite {
     margin: 35px 0 28px;
@@ -309,11 +284,12 @@ footer p {
     color: #9a8266;
 }
 
-/* =========================================================
+/* =====================================================
    MAIN INVITATION
-========================================================= */
+===================================================== */
 
 .invitation {
+    width: 100%;
     max-width: 1100px;
 
     margin: auto;
@@ -334,11 +310,13 @@ footer p {
     transform: none;
 }
 
-/* =========================================================
+/* =====================================================
    HERO
-========================================================= */
+===================================================== */
 
 .hero {
+    width: 100%;
+
     text-align: center;
 
     min-height: 690px;
@@ -347,9 +325,10 @@ footer p {
 
     display: flex;
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
+
+    overflow: hidden;
 }
 
 .hero-ornament {
@@ -373,19 +352,21 @@ footer p {
 
 .script-intro {
     font-size: 34px;
-
     margin: 18px 0 0;
 }
 
-/* =========================================================
-   CELEBRANT NAME
-   DESKTOP + MOBILE SAFE
-========================================================= */
+/* =====================================================
+   MAIN CELEBRANT NAME
+   READABLE + RESPONSIVE
+===================================================== */
 
 .celebrant {
+    width: 100%;
+    max-width: 900px;
+
     font-family: "Cormorant Garamond", Georgia, serif;
 
-    font-size: clamp(48px, 8vw, 82px);
+    font-size: clamp(42px, 7vw, 82px);
 
     font-weight: 600;
 
@@ -396,10 +377,6 @@ footer p {
     text-transform: uppercase;
 
     color: #5a4434;
-
-    width: 100%;
-
-    max-width: 900px;
 
     margin: 10px auto;
 
@@ -412,13 +389,12 @@ footer p {
     word-break: normal;
 }
 
-/* =========================================================
+/* =====================================================
    GOLD RULE
-========================================================= */
+===================================================== */
 
 .gold-rule {
     display: flex;
-
     align-items: center;
 
     gap: 16px;
@@ -452,13 +428,12 @@ footer p {
 
 .gold-rule i {
     font-style: normal;
-
     font-size: 20px;
 }
 
-/* =========================================================
+/* =====================================================
    HERO DESCRIPTION
-========================================================= */
+===================================================== */
 
 .hero-copy {
     max-width: 460px;
@@ -472,15 +447,14 @@ footer p {
     text-align: center;
 }
 
-/* =========================================================
-   HERO DATE
-========================================================= */
+/* =====================================================
+   DATE
+===================================================== */
 
 .hero-date {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 17px;
@@ -493,7 +467,7 @@ footer p {
 
     font-size: 11px;
 
-    text-align: center;
+    max-width: 100%;
 }
 
 .hero-date strong {
@@ -512,12 +486,9 @@ footer p {
     padding: 0 18px;
 }
 
-/* =========================================================
+/* =====================================================
    CELEBRANT PHOTO
-   IMPORTANT:
-   NO EXTRA FRAME.
-   THE IMAGE ITSELF ALREADY HAS THE ORNATE FRAME.
-========================================================= */
+===================================================== */
 
 .celebrant-photo-wrap {
     width: 100%;
@@ -536,7 +507,7 @@ footer p {
 
     width: min(300px, 76vw);
 
-    height: auto;
+    aspect-ratio: 4 / 5;
 
     padding: 0;
 
@@ -546,36 +517,27 @@ footer p {
 
     border: 0;
 
-    outline: 0;
-
     box-shadow: none;
 
-    overflow: visible;
+    overflow: hidden;
 }
 
 .celebrant-photo img {
     display: block;
 
     width: 100%;
-
-    height: auto;
-
-    max-width: 100%;
+    height: 100%;
 
     object-fit: contain;
 
     background: transparent;
 
     border: 0;
-
-    outline: 0;
-
-    box-shadow: none;
 }
 
-/* =========================================================
-   GENERAL SECTIONS
-========================================================= */
+/* =====================================================
+   SECTIONS
+===================================================== */
 
 .section {
     padding: 85px 0;
@@ -597,9 +559,9 @@ footer p {
     text-align: center;
 }
 
-/* =========================================================
+/* =====================================================
    DETAILS
-========================================================= */
+===================================================== */
 
 .details-grid {
     display: grid;
@@ -623,7 +585,6 @@ footer p {
 
 .detail-icon {
     font-size: 28px;
-
     color: var(--gold);
 }
 
@@ -643,17 +604,15 @@ footer p {
 
 .detail-card p:last-child {
     color: var(--muted);
-
     margin-bottom: 0;
 }
 
-/* =========================================================
+/* =====================================================
    PROGRAMME
-========================================================= */
+===================================================== */
 
 .programme {
     max-width: 760px;
-
     margin: auto;
 }
 
@@ -705,7 +664,6 @@ footer p {
 
 .timeline-item.in-view {
     opacity: 1;
-
     transform: none;
 }
 
@@ -717,7 +675,6 @@ footer p {
     top: 0;
 
     width: 29px;
-
     height: 29px;
 
     border-radius: 50%;
@@ -753,9 +710,9 @@ footer p {
     font-size: 17px;
 }
 
-/* =========================================================
-   SECTION INTRO
-========================================================= */
+/* =====================================================
+   TRADITIONS
+===================================================== */
 
 .section-intro {
     text-align: center;
@@ -766,10 +723,6 @@ footer p {
 
     margin: -24px auto 38px;
 }
-
-/* =========================================================
-   TRADITIONS
-========================================================= */
 
 .tradition-grid {
     display: grid;
@@ -809,7 +762,6 @@ footer p {
 
 .tradition-number {
     width: 54px;
-
     height: 54px;
 
     border-radius: 50%;
@@ -877,9 +829,9 @@ footer p {
     break-inside: avoid;
 }
 
-/* =========================================================
+/* =====================================================
    CLOSING
-========================================================= */
+===================================================== */
 
 .closing {
     padding-top: 65px;
@@ -888,6 +840,7 @@ footer p {
 }
 
 .closing-frame {
+    width: 100%;
     max-width: 760px;
 
     margin: auto;
@@ -905,6 +858,8 @@ footer p {
     outline-offset: 7px;
 
     box-shadow: 0 20px 55px #72533112;
+
+    overflow: hidden;
 }
 
 .script-title {
@@ -937,16 +892,36 @@ footer p {
     margin: 20px 0 0;
 }
 
+/* =====================================================
+   CLOSING NAME
+   IMPORTANT MOBILE FIX
+===================================================== */
+
 .closing-frame h3 {
-    font-family: "Great Vibes", cursive;
+    width: 100%;
+    max-width: 100%;
 
-    font-size: 42px;
+    font-family: "Cormorant Garamond", Georgia, serif;
 
-    font-weight: 400;
+    font-size: clamp(30px, 7vw, 46px);
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
 
     color: #604a38;
 
-    margin: 0;
+    margin: 0 auto;
+
+    text-align: center;
+
+    overflow-wrap: break-word;
+
+    word-break: normal;
 }
 
 .closing-star {
@@ -959,9 +934,9 @@ footer p {
     margin-top: 20px;
 }
 
-/* =========================================================
+/* =====================================================
    FOOTER
-========================================================= */
+===================================================== */
 
 footer {
     text-align: center;
@@ -985,9 +960,9 @@ footer small {
     font-size: 14px;
 }
 
-/* =========================================================
-   REVEAL ANIMATION
-========================================================= */
+/* =====================================================
+   REVEAL ANIMATIONS
+===================================================== */
 
 .reveal {
     opacity: 0;
@@ -1005,22 +980,36 @@ footer small {
     transform: none;
 }
 
-/* =========================================================
+/* =====================================================
+   PETAL ANIMATION
+===================================================== */
+
+@keyframes fall {
+    to {
+        transform:
+            translate3d(var(--drift), 110vh, 0)
+            rotate(540deg);
+
+        opacity: 0;
+    }
+}
+
+/* =====================================================
    TABLET / MOBILE
-========================================================= */
+===================================================== */
 
 @media (max-width: 700px) {
 
     body {
         font-size: 17px;
+        overflow-x: hidden;
     }
 
     .invitation {
         width: 100%;
-
         max-width: 100%;
-
         padding: 0 18px;
+        overflow: hidden;
     }
 
     /* COVER */
@@ -1031,12 +1020,15 @@ footer small {
 
     .cover-frame {
         width: 100%;
+        max-width: 100%;
 
         min-height: 590px;
 
         padding: 45px 22px;
 
         outline-offset: 6px;
+
+        overflow: hidden;
     }
 
     .cover h1 {
@@ -1044,15 +1036,18 @@ footer small {
     }
 
     .cover-name {
+        width: 100%;
+        max-width: 330px;
+
         font-size: clamp(27px, 8vw, 38px);
 
         line-height: 1.12;
 
         letter-spacing: 0.09em;
 
-        max-width: 330px;
-
         padding: 0 8px;
+
+        overflow-wrap: break-word;
     }
 
     /* HERO */
@@ -1063,6 +1058,8 @@ footer small {
         min-height: 590px;
 
         padding: 90px 8px 70px;
+
+        overflow: hidden;
     }
 
     .hero-ornament {
@@ -1077,14 +1074,10 @@ footer small {
         font-size: 30px;
     }
 
-    /*
-       THIS IS THE IMPORTANT MOBILE NAME FIX.
-       It can now shrink and wrap inside the phone.
-    */
+    /* MAIN CELEBRANT NAME */
 
     .celebrant {
         width: 100%;
-
         max-width: 100%;
 
         padding: 0 10px;
@@ -1100,6 +1093,8 @@ footer small {
         overflow-wrap: break-word;
 
         word-break: normal;
+
+        text-align: center;
     }
 
     .gold-rule {
@@ -1107,6 +1102,7 @@ footer small {
     }
 
     .hero-copy {
+        width: 100%;
         max-width: 390px;
 
         font-size: 19px;
@@ -1117,19 +1113,24 @@ footer small {
     /* DATE */
 
     .hero-date {
+        width: 100%;
+        max-width: 100%;
+
         gap: 10px;
 
         font-size: 9px;
 
         letter-spacing: 0.13em;
 
-        max-width: 100%;
+        justify-content: center;
     }
 
     .hero-date strong {
         font-size: 40px;
 
         padding: 0 12px;
+
+        flex-shrink: 0;
     }
 
     /* PHOTO */
@@ -1138,6 +1139,10 @@ footer small {
         margin-top: 32px;
 
         width: 100%;
+
+        max-width: 100%;
+
+        overflow: visible;
     }
 
     .celebrant-photo {
@@ -1146,6 +1151,8 @@ footer small {
         max-width: 100%;
 
         height: auto;
+
+        overflow: visible;
     }
 
     .celebrant-photo img {
@@ -1154,12 +1161,20 @@ footer small {
         height: auto;
 
         max-width: 100%;
+
+        object-fit: contain;
+
+        display: block;
     }
 
     /* SECTIONS */
 
     .section {
+        width: 100%;
+
         padding: 65px 0;
+
+        overflow: hidden;
     }
 
     .section-title {
@@ -1196,30 +1211,64 @@ footer small {
 
     /* CLOSING */
 
+    .closing {
+        width: 100%;
+        overflow: hidden;
+    }
+
     .closing-frame {
-        padding: 42px 22px;
+        width: 100%;
+        max-width: 100%;
+
+        padding: 42px 18px;
+
+        margin: 0 auto;
+
+        overflow: hidden;
     }
 
     .closing-frame > p:not(.eyebrow):not(.closing-sign) {
-        font-size: 18px;
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 19px;
+
+        line-height: 1.55;
     }
 
     .closing-frame h3 {
-        font-size: 34px;
+        width: 100%;
+        max-width: 100%;
+
+        font-size: clamp(28px, 8vw, 44px);
+
+        line-height: 1.1;
+
+        letter-spacing: 0.06em;
+
+        padding: 0;
+
+        margin: 0 auto;
+
+        overflow-wrap: break-word;
+
+        word-break: normal;
+    }
+
+    .closing-sign {
+        font-size: 27px;
     }
 }
 
-/* =========================================================
+/* =====================================================
    SMALL PHONES
-========================================================= */
+===================================================== */
 
 @media (max-width: 420px) {
 
     body {
         font-size: 16px;
     }
-
-    /* COVER */
 
     .cover {
         padding: 14px;
@@ -1234,7 +1283,7 @@ footer small {
     }
 
     .cover h1 {
-        font-size: 51px;
+        font-size: 53px;
     }
 
     .cover-name {
@@ -1243,50 +1292,30 @@ footer small {
         letter-spacing: 0.075em;
 
         max-width: 285px;
-
-        line-height: 1.12;
     }
 
-    /* HERO */
-
     .hero {
-        padding-left: 4px;
-
-        padding-right: 4px;
+        padding: 75px 5px 60px;
     }
 
     .script-intro {
-        font-size: 28px;
+        font-size: 27px;
     }
 
-    /*
-       FINAL PHONE SIZE.
-       This prevents the name from going outside
-       the screen on narrow devices.
-    */
-
     .celebrant {
-        width: 100%;
+        font-size: 34px;
 
-        max-width: 330px;
+        letter-spacing: 0.035em;
 
         padding: 0 5px;
-
-        font-size: 32px;
-
-        line-height: 1.1;
-
-        letter-spacing: 0.025em;
     }
 
     .hero-copy {
         font-size: 18px;
-
-        max-width: 330px;
     }
 
     .hero-date {
-        gap: 8px;
+        gap: 7px;
 
         font-size: 8px;
 
@@ -1294,90 +1323,43 @@ footer small {
     }
 
     .hero-date strong {
-        font-size: 38px;
+        font-size: 36px;
 
         padding: 0 10px;
     }
 
-    /* PHOTO */
-
     .celebrant-photo {
         width: min(215px, 68vw);
     }
-
-    /* SECTIONS */
 
     .section {
         padding: 55px 0;
     }
 
     .section-title {
-        font-size: 38px;
-    }
-
-    /* TIMELINE */
-
-    .timeline {
-        padding-left: 30px;
-    }
-
-    .timeline-dot {
-        left: -30px;
-    }
-
-    /* CLOSING */
-
-    .closing {
-        padding-bottom: 75px;
+        font-size: 36px;
     }
 
     .closing-frame {
-        padding: 35px 18px;
-    }
-}
-
-/* =========================================================
-   VERY SMALL PHONES
-========================================================= */
-
-@media (max-width: 360px) {
-
-    .cover-frame {
-        padding-left: 14px;
-        padding-right: 14px;
+        padding: 38px 14px;
     }
 
-    .cover h1 {
-        font-size: 45px;
+    .closing-frame > p:not(.eyebrow):not(.closing-sign) {
+        font-size: 18px;
     }
 
-    .cover-name {
-        font-size: 25px;
-
-        max-width: 260px;
-    }
-
-    .celebrant {
+    .closing-frame h3 {
         font-size: 29px;
 
-        max-width: 310px;
+        letter-spacing: 0.045em;
 
-        letter-spacing: 0.02em;
+        line-height: 1.12;
     }
 
-    .hero-date {
-        gap: 6px;
+    .tradition-card ol {
+        columns: 1;
 
-        font-size: 7px;
-    }
-
-    .hero-date strong {
-        font-size: 34px;
-
-        padding: 0 8px;
-    }
-
-    .celebrant-photo {
-        width: 190px;
+        padding-left: 45px;
+        padding-right: 15px;
     }
 }
