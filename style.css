@@ -1645,3 +1645,199 @@ footer small {
         overflow: visible !important;
     }
 }
+
+/* =====================================================
+   FINAL DESIGN FIXES
+   COVER PHOTO, SPACING AND BIRTHDAY TEXT
+===================================================== */
+
+/* FRONT COVER LAYOUT */
+.cover-frame {
+    justify-content: flex-start;
+    gap: 0;
+    padding: 35px 25px 28px;
+}
+
+/* FRONT COVER TITLE */
+.cover h1 {
+    margin: 10px 0 20px;
+    line-height: 0.9;
+}
+
+/* FRONT COVER PHOTO - BIGGER */
+.cover-photo {
+    width: min(310px, 75vw);
+    aspect-ratio: 4 / 5;
+    margin: 12px auto 18px;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.cover-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* FRONT COVER NAME */
+.cover-name {
+    max-width: 470px;
+    margin: 12px auto 4px;
+    font-size: clamp(27px, 5vw, 40px);
+    line-height: 1.05;
+    letter-spacing: 0.09em;
+}
+
+/* FRONT COVER BIRTHDAY TEXT */
+.cover-birthday {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.19em;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-align: center;
+    margin: 0 0 15px;
+}
+
+/* BUTTON SPACING */
+.open-invite {
+    margin: 18px 0 12px;
+}
+
+/* =====================================================
+   MIDDLE INVITATION PHOTO - BIGGER
+===================================================== */
+
+.hero {
+    overflow: visible !important;
+    min-height: auto;
+}
+
+.celebrant-photo-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+    overflow: visible;
+}
+
+.celebrant-photo {
+    width: min(760px, 95vw) !important;
+    max-width: 95vw !important;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    flex-shrink: 0;
+    overflow: visible;
+}
+
+.celebrant-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: none;
+    background: transparent;
+    border: 0;
+}
+
+/* =====================================================
+   MOBILE FIXES
+===================================================== */
+
+@media (max-width: 700px) {
+
+    .cover {
+        padding: 10px;
+        align-items: flex-start;
+        overflow-y: auto;
+    }
+
+    .cover-frame {
+        width: 100%;
+        min-height: 0;
+        justify-content: flex-start;
+        padding: 22px 12px 24px;
+        outline-offset: 6px;
+    }
+
+    .cover h1 {
+        font-size: clamp(38px, 10vw, 48px);
+        line-height: 0.9;
+        margin: 8px 0 16px;
+    }
+
+    /* BIG FRONT PHOTO */
+    .cover-photo {
+        width: min(300px, 78vw);
+        aspect-ratio: 4 / 5;
+        margin: 8px auto 15px;
+    }
+
+    .cover-name {
+        width: 100%;
+        max-width: 330px;
+        font-size: clamp(24px, 6.5vw, 30px);
+        line-height: 1.05;
+        letter-spacing: 0.065em;
+        margin: 8px auto 3px;
+    }
+
+    .cover-birthday {
+        font-size: 10px;
+        letter-spacing: 0.16em;
+        margin: 0 0 12px;
+    }
+
+    .open-invite {
+        margin: 12px 0 7px;
+        padding: 10px 21px;
+    }
+
+    .cover-date {
+        font-size: 8px;
+        margin-top: 4px;
+    }
+
+    /* BIG MIDDLE PHOTO */
+    .celebrant-photo-wrap {
+        width: 100%;
+        margin: 35px auto;
+    }
+
+    .celebrant-photo {
+        width: 94vw !important;
+        max-width: 94vw !important;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 420px) {
+
+    .cover-frame {
+        padding: 18px 10px 20px;
+    }
+
+    .cover-photo {
+        width: min(280px, 78vw);
+    }
+
+    .cover-name {
+        font-size: 23px;
+        letter-spacing: 0.055em;
+    }
+
+    .cover-birthday {
+        font-size: 9px;
+        letter-spacing: 0.13em;
+    }
+
+    .celebrant-photo {
+        width: 94vw !important;
+        max-width: 94vw !important;
+    }
+}
+
