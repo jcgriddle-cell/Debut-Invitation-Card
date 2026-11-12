@@ -150,7 +150,7 @@ button {
 }
 
 /* =====================================================
-   SMALL TEXT
+   TEXT
 ===================================================== */
 
 .eyebrow,
@@ -244,7 +244,7 @@ footer p {
 }
 
 /* =====================================================
-   OPEN BUTTON
+   BUTTON
 ===================================================== */
 
 .open-invite {
@@ -269,9 +269,7 @@ footer p {
 
 .open-invite:hover {
     background: #785936;
-
     transform: translateY(-3px);
-
     box-shadow: 0 8px 18px #775a3433;
 }
 
@@ -285,7 +283,7 @@ footer p {
 }
 
 /* =====================================================
-   MAIN INVITATION
+   INVITATION
 ===================================================== */
 
 .invitation {
@@ -356,8 +354,7 @@ footer p {
 }
 
 /* =====================================================
-   MAIN CELEBRANT NAME
-   READABLE + RESPONSIVE
+   CELEBRANT NAME
 ===================================================== */
 
 .celebrant {
@@ -385,8 +382,6 @@ footer p {
     text-align: center;
 
     overflow-wrap: break-word;
-
-    word-break: normal;
 }
 
 /* =====================================================
@@ -494,9 +489,7 @@ footer p {
     width: 100%;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     margin-top: 42px;
@@ -505,7 +498,8 @@ footer p {
 .celebrant-photo {
     position: relative;
 
-    width: min(300px, 76vw);
+    /* LARGER PHOTO */
+    width: min(360px, 82vw);
 
     aspect-ratio: 4 / 5;
 
@@ -835,7 +829,6 @@ footer p {
 
 .closing {
     padding-top: 65px;
-
     padding-bottom: 100px;
 }
 
@@ -882,6 +875,8 @@ footer p {
     font-size: 20px;
 }
 
+/* CLOSING SIGNATURE */
+
 .closing-sign {
     font-family: "Great Vibes", cursive;
 
@@ -892,10 +887,7 @@ footer p {
     margin: 20px 0 0;
 }
 
-/* =====================================================
-   CLOSING NAME
-   IMPORTANT MOBILE FIX
-===================================================== */
+/* CLOSING NAME */
 
 .closing-frame h3 {
     width: 100%;
@@ -920,8 +912,6 @@ footer p {
     text-align: center;
 
     overflow-wrap: break-word;
-
-    word-break: normal;
 }
 
 .closing-star {
@@ -952,7 +942,6 @@ footer p {
 
 footer span {
     color: var(--gold);
-
     font-size: 20px;
 }
 
@@ -961,7 +950,7 @@ footer small {
 }
 
 /* =====================================================
-   REVEAL ANIMATIONS
+   REVEAL
 ===================================================== */
 
 .reveal {
@@ -976,7 +965,6 @@ footer small {
 
 .reveal.in-view {
     opacity: 1;
-
     transform: none;
 }
 
@@ -995,7 +983,7 @@ footer small {
 }
 
 /* =====================================================
-   TABLET / MOBILE
+   MOBILE
 ===================================================== */
 
 @media (max-width: 700px) {
@@ -1074,7 +1062,7 @@ footer small {
         font-size: 30px;
     }
 
-    /* MAIN CELEBRANT NAME */
+    /* CELEBRANT NAME */
 
     .celebrant {
         width: 100%;
@@ -1091,8 +1079,6 @@ footer small {
         letter-spacing: 0.045em;
 
         overflow-wrap: break-word;
-
-        word-break: normal;
 
         text-align: center;
     }
@@ -1133,36 +1119,49 @@ footer small {
         flex-shrink: 0;
     }
 
-    /* PHOTO */
+    /* =================================================
+       BIGGER CELEBRANT PHOTO
+    ================================================= */
 
     .celebrant-photo-wrap {
-        margin-top: 32px;
-
         width: 100%;
 
-        max-width: 100%;
+        margin-top: 32px;
 
-        overflow: visible;
+        display: flex;
+        justify-content: center;
     }
 
     .celebrant-photo {
-        width: min(250px, 72vw);
+        width: min(360px, 88vw);
 
         max-width: 100%;
 
+        aspect-ratio: 4 / 5;
+
         height: auto;
 
-        overflow: visible;
+        background: transparent;
+
+        border: 0;
+
+        box-shadow: none;
+
+        overflow: hidden;
     }
 
     .celebrant-photo img {
         width: 100%;
 
-        height: auto;
+        height: 100%;
 
         max-width: 100%;
 
         object-fit: contain;
+
+        background: transparent;
+
+        border: 0;
 
         display: block;
     }
@@ -1251,8 +1250,6 @@ footer small {
         margin: 0 auto;
 
         overflow-wrap: break-word;
-
-        word-break: normal;
     }
 
     .closing-sign {
@@ -1328,8 +1325,10 @@ footer small {
         padding: 0 10px;
     }
 
+    /* BIG PHOTO ON SMALL PHONES */
+
     .celebrant-photo {
-        width: min(215px, 68vw);
+        width: min(330px, 86vw);
     }
 
     .section {
