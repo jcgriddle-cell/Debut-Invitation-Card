@@ -1,4 +1,3 @@
-```css
 * {
     box-sizing: border-box;
 }
@@ -107,11 +106,6 @@ button {
     pointer-events: none;
 }
 
-
-/* =====================================================
-   COVER FRAME
-===================================================== */
-
 .cover-frame {
     position: relative;
 
@@ -214,7 +208,7 @@ footer p {
     font-weight: 500;
     line-height: 0.85;
 
-    margin: 0;
+    margin: 14px 0;
 
     color: #594536;
 }
@@ -224,31 +218,6 @@ footer p {
     color: var(--gold);
     font-size: 1.1em;
     font-weight: 400;
-}
-
-
-/* =====================================================
-   COVER TITLE SPACING
-===================================================== */
-
-/*
-   This creates the empty space where
-   "A Night to Remember" originally was.
-*/
-
-.cover-title-space {
-    height: 105px;
-    width: 100%;
-}
-
-
-/*
-   The title is now positioned lower,
-   where the old ❦ ornament used to be.
-*/
-
-.moved-cover-title {
-    margin: 0 0 22px;
 }
 
 
@@ -379,11 +348,6 @@ footer p {
     margin-bottom: 25px;
 }
 
-
-/* =====================================================
-   SCRIPT TEXT
-===================================================== */
-
 .script-intro,
 .script-title {
     font-family: "Great Vibes", cursive;
@@ -499,7 +463,6 @@ footer p {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 17px;
@@ -570,7 +533,6 @@ footer p {
     display: block;
 
     width: 100%;
-
     height: 100%;
 
     object-fit: contain;
@@ -891,7 +853,6 @@ footer p {
 
 .closing-frame {
     width: 100%;
-
     max-width: 760px;
 
     margin: auto;
@@ -934,9 +895,7 @@ footer p {
 }
 
 
-/* =====================================================
-   CLOSING SIGNATURE
-===================================================== */
+/* CLOSING SIGNATURE */
 
 .closing-sign {
     font-family: "Great Vibes", cursive;
@@ -949,9 +908,7 @@ footer p {
 }
 
 
-/* =====================================================
-   CLOSING NAME
-===================================================== */
+/* CLOSING NAME */
 
 .closing-frame h3 {
     width: 100%;
@@ -1042,6 +999,7 @@ footer small {
 ===================================================== */
 
 @keyframes fall {
+
     to {
         transform:
             translate3d(var(--drift), 110vh, 0)
@@ -1049,6 +1007,7 @@ footer small {
 
         opacity: 0;
     }
+
 }
 
 
@@ -1090,23 +1049,9 @@ footer small {
         overflow: hidden;
     }
 
-
-    /* COVER TITLE */
-
     .cover h1 {
         font-size: clamp(46px, 14vw, 64px);
     }
-
-    .cover-title-space {
-        height: 90px;
-    }
-
-    .moved-cover-title {
-        margin-bottom: 22px;
-    }
-
-
-    /* COVER NAME */
 
     .cover-name {
         width: 100%;
@@ -1214,7 +1159,7 @@ footer small {
     }
 
 
-    /* CELEBRANT PHOTO */
+    /* BIGGER CELEBRANT PHOTO */
 
     .celebrant-photo-wrap {
         width: 100%;
@@ -1222,7 +1167,6 @@ footer small {
         margin-top: 32px;
 
         display: flex;
-
         justify-content: center;
     }
 
@@ -1380,23 +1324,9 @@ footer small {
         outline-offset: 5px;
     }
 
-
-    /* COVER TITLE */
-
     .cover h1 {
         font-size: 53px;
     }
-
-    .cover-title-space {
-        height: 75px;
-    }
-
-    .moved-cover-title {
-        margin-bottom: 20px;
-    }
-
-
-    /* COVER NAME */
 
     .cover-name {
         font-size: 29px;
@@ -1447,7 +1377,7 @@ footer small {
     }
 
 
-    /* PHOTO */
+    /* BIG PHOTO */
 
     .celebrant-photo {
         width: min(330px, 86vw);
@@ -1490,9 +1420,7 @@ footer small {
         columns: 1;
 
         padding-left: 45px;
-
         padding-right: 15px;
     }
 
 }
-```
