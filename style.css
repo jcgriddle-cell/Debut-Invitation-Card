@@ -1566,24 +1566,62 @@ footer small {
         margin-top: 10px;
     }
 }
-/* FORCE BIGGER CELEBRANT PHOTO */
+
+/* =====================================================
+   CELEBRANT PHOTO - LARGE ON PC AND MOBILE
+===================================================== */
+
+.hero {
+    overflow: visible !important;
+    min-height: auto;
+}
+
 .celebrant-photo-wrap {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    margin: 15px auto !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px auto;
+    overflow: visible;
 }
 
 .celebrant-photo {
-    width: 760px !important;
-    max-width: 92vw !important;
-    height: auto !important;
-    aspect-ratio: 4 / 5 !important;
-    flex-shrink: 0 !important;
+    width: min(760px, 95vw) !important;
+    max-width: 95vw !important;
+    aspect-ratio: 4 / 5;
+    height: auto;
+    flex-shrink: 0;
+    overflow: visible;
 }
 
 .celebrant-photo img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-width: none;
 }
+
+/* PC DISPLAY */
+@media (min-width: 701px) {
+    .celebrant-photo {
+        width: min(760px, 75vw) !important;
+    }
+
+    .hero {
+        overflow: visible !important;
+    }
+}
+
+/* MOBILE DISPLAY */
+@media (max-width: 700px) {
+    .celebrant-photo {
+        width: 92vw !important;
+        max-width: 92vw !important;
+    }
+
+    .hero {
+        overflow: visible !important;
+    }
+}
+
