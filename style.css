@@ -274,12 +274,12 @@ footer p {
 ===================================================== */
 
 .cover-birthday {
-    font-family: "Cormorant Garamond", Georgia, serif;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.19em;
+    font-family: "Great Vibes", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
     line-height: 1.25;
-    text-transform: uppercase;
+    text-transform: none;
     color: var(--gold);
     margin: 0 0 4px;
     text-align: center;
