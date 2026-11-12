@@ -1,3 +1,4 @@
+```css
 * {
     box-sizing: border-box;
 }
@@ -28,6 +29,7 @@ body {
 button {
     font: inherit;
 }
+
 
 /* =====================================================
    BACKGROUND
@@ -69,6 +71,7 @@ button {
     font-size: 15px;
 }
 
+
 /* =====================================================
    COVER
 ===================================================== */
@@ -103,6 +106,11 @@ button {
     transform: scale(1.04);
     pointer-events: none;
 }
+
+
+/* =====================================================
+   COVER FRAME
+===================================================== */
 
 .cover-frame {
     position: relative;
@@ -149,6 +157,7 @@ button {
     right: 22px;
 }
 
+
 /* =====================================================
    TEXT
 ===================================================== */
@@ -164,6 +173,7 @@ footer p {
     font-weight: 600;
     color: var(--gold);
 }
+
 
 /* =====================================================
    WAX SEAL
@@ -194,6 +204,7 @@ footer p {
     box-shadow: 0 5px 14px #70502735;
 }
 
+
 /* =====================================================
    COVER TITLE
 ===================================================== */
@@ -203,7 +214,7 @@ footer p {
     font-weight: 500;
     line-height: 0.85;
 
-    margin: 14px 0;
+    margin: 0;
 
     color: #594536;
 }
@@ -214,6 +225,32 @@ footer p {
     font-size: 1.1em;
     font-weight: 400;
 }
+
+
+/* =====================================================
+   COVER TITLE SPACING
+===================================================== */
+
+/*
+   This creates the empty space where
+   "A Night to Remember" originally was.
+*/
+
+.cover-title-space {
+    height: 105px;
+    width: 100%;
+}
+
+
+/*
+   The title is now positioned lower,
+   where the old ❦ ornament used to be.
+*/
+
+.moved-cover-title {
+    margin: 0 0 22px;
+}
+
 
 /* =====================================================
    COVER NAME
@@ -242,6 +279,7 @@ footer p {
 
     overflow-wrap: break-word;
 }
+
 
 /* =====================================================
    BUTTON
@@ -282,6 +320,7 @@ footer p {
     color: #9a8266;
 }
 
+
 /* =====================================================
    INVITATION
 ===================================================== */
@@ -307,6 +346,7 @@ footer p {
     opacity: 1;
     transform: none;
 }
+
 
 /* =====================================================
    HERO
@@ -339,6 +379,11 @@ footer p {
     margin-bottom: 25px;
 }
 
+
+/* =====================================================
+   SCRIPT TEXT
+===================================================== */
+
 .script-intro,
 .script-title {
     font-family: "Great Vibes", cursive;
@@ -352,6 +397,7 @@ footer p {
     font-size: 34px;
     margin: 18px 0 0;
 }
+
 
 /* =====================================================
    CELEBRANT NAME
@@ -383,6 +429,7 @@ footer p {
 
     overflow-wrap: break-word;
 }
+
 
 /* =====================================================
    GOLD RULE
@@ -426,6 +473,7 @@ footer p {
     font-size: 20px;
 }
 
+
 /* =====================================================
    HERO DESCRIPTION
 ===================================================== */
@@ -442,6 +490,7 @@ footer p {
     text-align: center;
 }
 
+
 /* =====================================================
    DATE
 ===================================================== */
@@ -450,6 +499,7 @@ footer p {
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     gap: 17px;
@@ -481,6 +531,7 @@ footer p {
     padding: 0 18px;
 }
 
+
 /* =====================================================
    CELEBRANT PHOTO
 ===================================================== */
@@ -498,7 +549,6 @@ footer p {
 .celebrant-photo {
     position: relative;
 
-    /* LARGER PHOTO */
     width: min(360px, 82vw);
 
     aspect-ratio: 4 / 5;
@@ -520,6 +570,7 @@ footer p {
     display: block;
 
     width: 100%;
+
     height: 100%;
 
     object-fit: contain;
@@ -528,6 +579,7 @@ footer p {
 
     border: 0;
 }
+
 
 /* =====================================================
    SECTIONS
@@ -552,6 +604,7 @@ footer p {
 .section > .eyebrow {
     text-align: center;
 }
+
 
 /* =====================================================
    DETAILS
@@ -600,6 +653,7 @@ footer p {
     color: var(--muted);
     margin-bottom: 0;
 }
+
 
 /* =====================================================
    PROGRAMME
@@ -703,6 +757,7 @@ footer p {
 
     font-size: 17px;
 }
+
 
 /* =====================================================
    TRADITIONS
@@ -823,17 +878,20 @@ footer p {
     break-inside: avoid;
 }
 
+
 /* =====================================================
    CLOSING
 ===================================================== */
 
 .closing {
     padding-top: 65px;
+
     padding-bottom: 100px;
 }
 
 .closing-frame {
     width: 100%;
+
     max-width: 760px;
 
     margin: auto;
@@ -875,7 +933,10 @@ footer p {
     font-size: 20px;
 }
 
-/* CLOSING SIGNATURE */
+
+/* =====================================================
+   CLOSING SIGNATURE
+===================================================== */
 
 .closing-sign {
     font-family: "Great Vibes", cursive;
@@ -887,7 +948,10 @@ footer p {
     margin: 20px 0 0;
 }
 
-/* CLOSING NAME */
+
+/* =====================================================
+   CLOSING NAME
+===================================================== */
 
 .closing-frame h3 {
     width: 100%;
@@ -924,6 +988,7 @@ footer p {
     margin-top: 20px;
 }
 
+
 /* =====================================================
    FOOTER
 ===================================================== */
@@ -942,12 +1007,14 @@ footer p {
 
 footer span {
     color: var(--gold);
+
     font-size: 20px;
 }
 
 footer small {
     font-size: 14px;
 }
+
 
 /* =====================================================
    REVEAL
@@ -965,8 +1032,10 @@ footer small {
 
 .reveal.in-view {
     opacity: 1;
+
     transform: none;
 }
+
 
 /* =====================================================
    PETAL ANIMATION
@@ -981,6 +1050,7 @@ footer small {
         opacity: 0;
     }
 }
+
 
 /* =====================================================
    MOBILE
@@ -999,6 +1069,7 @@ footer small {
         padding: 0 18px;
         overflow: hidden;
     }
+
 
     /* COVER */
 
@@ -1019,9 +1090,23 @@ footer small {
         overflow: hidden;
     }
 
+
+    /* COVER TITLE */
+
     .cover h1 {
         font-size: clamp(46px, 14vw, 64px);
     }
+
+    .cover-title-space {
+        height: 90px;
+    }
+
+    .moved-cover-title {
+        margin-bottom: 22px;
+    }
+
+
+    /* COVER NAME */
 
     .cover-name {
         width: 100%;
@@ -1037,6 +1122,7 @@ footer small {
 
         overflow-wrap: break-word;
     }
+
 
     /* HERO */
 
@@ -1062,6 +1148,7 @@ footer small {
         font-size: 30px;
     }
 
+
     /* CELEBRANT NAME */
 
     .celebrant {
@@ -1083,9 +1170,15 @@ footer small {
         text-align: center;
     }
 
+
+    /* GOLD RULE */
+
     .gold-rule {
         width: min(260px, 85%);
     }
+
+
+    /* HERO COPY */
 
     .hero-copy {
         width: 100%;
@@ -1095,6 +1188,7 @@ footer small {
 
         padding: 0 10px;
     }
+
 
     /* DATE */
 
@@ -1119,9 +1213,8 @@ footer small {
         flex-shrink: 0;
     }
 
-    /* =================================================
-       BIGGER CELEBRANT PHOTO
-    ================================================= */
+
+    /* CELEBRANT PHOTO */
 
     .celebrant-photo-wrap {
         width: 100%;
@@ -1129,6 +1222,7 @@ footer small {
         margin-top: 32px;
 
         display: flex;
+
         justify-content: center;
     }
 
@@ -1166,6 +1260,7 @@ footer small {
         display: block;
     }
 
+
     /* SECTIONS */
 
     .section {
@@ -1180,6 +1275,7 @@ footer small {
         margin-bottom: 30px;
     }
 
+
     /* DETAILS */
 
     .details-grid {
@@ -1192,6 +1288,7 @@ footer small {
         padding: 25px 18px;
     }
 
+
     /* TRADITIONS */
 
     .tradition-grid {
@@ -1202,11 +1299,13 @@ footer small {
         columns: 1;
     }
 
+
     /* TIMELINE */
 
     .timeline-item h3 {
         font-size: 22px;
     }
+
 
     /* CLOSING */
 
@@ -1255,7 +1354,9 @@ footer small {
     .closing-sign {
         font-size: 27px;
     }
+
 }
+
 
 /* =====================================================
    SMALL PHONES
@@ -1279,9 +1380,23 @@ footer small {
         outline-offset: 5px;
     }
 
+
+    /* COVER TITLE */
+
     .cover h1 {
         font-size: 53px;
     }
+
+    .cover-title-space {
+        height: 75px;
+    }
+
+    .moved-cover-title {
+        margin-bottom: 20px;
+    }
+
+
+    /* COVER NAME */
 
     .cover-name {
         font-size: 29px;
@@ -1290,6 +1405,9 @@ footer small {
 
         max-width: 285px;
     }
+
+
+    /* HERO */
 
     .hero {
         padding: 75px 5px 60px;
@@ -1311,6 +1429,9 @@ footer small {
         font-size: 18px;
     }
 
+
+    /* DATE */
+
     .hero-date {
         gap: 7px;
 
@@ -1325,11 +1446,15 @@ footer small {
         padding: 0 10px;
     }
 
-    /* BIG PHOTO ON SMALL PHONES */
+
+    /* PHOTO */
 
     .celebrant-photo {
         width: min(330px, 86vw);
     }
+
+
+    /* SECTIONS */
 
     .section {
         padding: 55px 0;
@@ -1338,6 +1463,9 @@ footer small {
     .section-title {
         font-size: 36px;
     }
+
+
+    /* CLOSING */
 
     .closing-frame {
         padding: 38px 14px;
@@ -1355,10 +1483,16 @@ footer small {
         line-height: 1.12;
     }
 
+
+    /* TRADITIONS */
+
     .tradition-card ol {
         columns: 1;
 
         padding-left: 45px;
+
         padding-right: 15px;
     }
+
 }
+```
