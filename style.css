@@ -1566,3 +1566,24 @@ footer small {
         margin-top: 10px;
     }
 }
+/* FORCE BIGGER CELEBRANT PHOTO */
+.celebrant-photo-wrap {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 15px auto !important;
+}
+
+.celebrant-photo {
+    width: 760px !important;
+    max-width: 92vw !important;
+    height: auto !important;
+    aspect-ratio: 4 / 5 !important;
+    flex-shrink: 0 !important;
+}
+
+.celebrant-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+}
