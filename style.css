@@ -254,7 +254,7 @@ footer p {
 
 /* CELEBRANT PHOTO ON COVER */
 .cover-photo {
-    width: min(155px, 42vw);
+    width: min(200px, 58vw);
     aspect-ratio: 4 / 5;
     margin: 18px auto 8px;
     overflow: hidden;
