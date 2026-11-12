@@ -527,34 +527,17 @@ footer p {
    CELEBRANT PHOTO
 ===================================================== */
 
-.celebrant-photo-wrap {
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-top: 42px;
+/* MAKE CELEBRANT PHOTO MUCH BIGGER */
+.celebrant-photo {
+    width: min(520px, 94vw) !important;
+    max-width: none !important;
+    aspect-ratio: 4 / 5;
+    height: auto;
 }
 
-.celebrant-photo {
-    position: relative;
-
-    width: min(360px, 82vw);
-
-    aspect-ratio: 4 / 5;
-
-    padding: 0;
-
-    margin: 0;
-
-    background: transparent;
-
-    border: 0;
-
-    box-shadow: none;
-
-    overflow: hidden;
+.celebrant-photo-wrap {
+    width: 100%;
+    margin-top: 15px;
 }
 
 .celebrant-photo img {
@@ -1488,4 +1471,98 @@ footer small {
         padding-right: 15px;
     }
 
+}
+
+/* =====================================================
+   COVER MOBILE SPACING + LARGER CELEBRANT PHOTO
+   Overrides only the cover layout; invitation sections stay unchanged.
+===================================================== */
+
+@media (max-width: 700px) {
+    .cover {
+        padding: 10px;
+        align-items: start;
+        overflow-y: auto;
+    }
+
+    .cover-frame {
+        justify-content: flex-start;
+        gap: 0;
+        padding: 14px 12px 18px;
+        min-height: 0;
+    }
+
+    .eyebrow {
+        margin: 0 0 7px;
+        line-height: 1.25;
+    }
+
+    .cover-small {
+        margin: 5px 0;
+        line-height: 1.25;
+    }
+
+    .cover h1 {
+        font-size: clamp(34px, 9vw, 42px);
+        line-height: 0.86;
+        margin: 3px 0 8px;
+    }
+
+    .cover-photo {
+        width: min(270px, 72vw);
+        aspect-ratio: 4 / 5;
+        flex: 0 0 auto;
+        margin: 0 auto 5px;
+    }
+
+    .cover-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .cover-name {
+        max-width: 300px;
+        font-size: clamp(20px, 5.5vw, 24px);
+        line-height: 1;
+        letter-spacing: 0.055em;
+        margin: 5px auto 0;
+        padding: 0 5px;
+    }
+
+    .open-invite {
+        margin: 12px 0 4px;
+        padding: 9px 19px;
+        font-size: 14px;
+    }
+
+    .cover-date {
+        margin: 3px 0 0;
+        font-size: 7px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 420px) {
+    .cover {
+        padding: 8px;
+    }
+
+    .cover-frame {
+        padding: 12px 10px 16px;
+    }
+
+    .cover-photo {
+        width: min(260px, 72vw);
+    }
+
+    .cover-name {
+        font-size: 21px;
+        line-height: 1;
+        margin-top: 4px;
+    }
+
+    .open-invite {
+        margin-top: 10px;
+    }
 }
