@@ -1840,4 +1840,40 @@ footer small {
         max-width: 94vw !important;
     }
 }
+/* COVER PHOTO - PRESERVE ORIGINAL FRAME AND TRANSPARENCY */
+.cover-photo {
+    width: min(350px, 88vw);
+    height: auto;
+    aspect-ratio: auto;
+    margin: 5px auto 0;
+    flex-shrink: 0;
+    overflow: visible;
+}
 
+.cover-photo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: transparent;
+}
+
+/* REDUCE SPACE BEFORE CELEBRANT NAME */
+.cover-name {
+    margin: 0 auto 3px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .cover-photo {
+        width: min(350px, 88vw);
+        height: auto;
+        margin: 5px auto 0;
+    }
+
+    .cover-photo img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+}
