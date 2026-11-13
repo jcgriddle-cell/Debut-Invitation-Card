@@ -1840,22 +1840,33 @@ footer small {
         max-width: 94vw !important;
     }
 }
-/* COVER PHOTO - PRESERVE ORIGINAL FRAME AND TRANSPARENCY */
+
+/* =====================================================
+   COVER PHOTO - CONTROLLED SIZE
+   PRESERVE ORIGINAL FRAME AND TRANSPARENCY
+===================================================== */
+
 .cover-photo {
-    width: min(350px, 88vw);
+    width: min(280px, 70vw);
     height: auto;
     aspect-ratio: auto;
     margin: 5px auto 0;
     flex-shrink: 0;
     overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cover-photo img {
     display: block;
     width: 100%;
     height: auto;
+    max-width: 100%;
     object-fit: contain;
+    object-position: center;
     background: transparent;
+    border: none;
 }
 
 /* REDUCE SPACE BEFORE CELEBRANT NAME */
@@ -1866,7 +1877,7 @@ footer small {
 /* MOBILE */
 @media (max-width: 700px) {
     .cover-photo {
-        width: min(350px, 88vw);
+        width: min(250px, 68vw);
         height: auto;
         margin: 5px auto 0;
     }
@@ -1875,5 +1886,12 @@ footer small {
         width: 100%;
         height: auto;
         object-fit: contain;
+    }
+}
+
+/* SMALL PHONES */
+@media (max-width: 420px) {
+    .cover-photo {
+        width: min(225px, 65vw);
     }
 }
